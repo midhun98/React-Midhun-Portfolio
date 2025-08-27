@@ -1,5 +1,7 @@
-import profile_pic from "./assets/images/midhun_profile_pic.jpg"
-function Navbar(){
+import profile_pic from "../assets/images/midhun_profile_pic.jpg";
+import ThemeController from "./ThemeController.jsx"; // Import the ThemeController
+
+function Navbar() {
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="flex-1">
@@ -7,13 +9,14 @@ function Navbar(){
             </div>
             <div className="flex gap-2">
 
-                <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+                <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto"/>
+                <ThemeController/> {/* Add ThemeController here */}
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img
                                 alt="Tailwind CSS Navbar component"
-                                src={profile_pic} />
+                                src={profile_pic}/>
                         </div>
                     </div>
                     <ul
@@ -31,7 +34,7 @@ function Navbar(){
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

@@ -1,6 +1,20 @@
-function ThemeController(){
+import { useEffect, useState } from "react";
+
+function ThemeController() {
+    const [theme, setTheme] = useState("dark"); // default: dark
+
+    // Sync state with HTML attribute
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", theme);
+    }, [theme]);
+
+    // Handle toggle change
+    const handleChange = (e) => {
+        setTheme(e.target.checked ? "dark" : "light");
+    };
+
     return (
-        <label className="flex cursor-pointer gap-2">
+        <label className="flex cursor-pointer gap-2 items-center">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -15,7 +29,7 @@ function ThemeController(){
                 <path
                     d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
             </svg>
-            <input type="checkbox" value="synthwave" className="toggle theme-controller" />
+            <input type="checkbox" value="dark" className="toggle theme-controller" checked={theme === "dark"} onChange={handleChange}/>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

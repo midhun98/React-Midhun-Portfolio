@@ -1,5 +1,5 @@
 
-import Navbar from './navbar.jsx';
+import Navbar from './navbar/navbar.jsx';
 function App() {
 
   return (
