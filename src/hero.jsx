@@ -2,8 +2,8 @@ import profile_pic from "./assets/images/midhun_profile_pic.jpg";
 
 function Hero() {
     return (
-        <div className="hero min-h-screen">
-            <div className="flex justify-center items-center flex-col lg:flex-row gap-4">
+        <div className="hero min-h-screen  bg-base-200">
+            <div className="flex justify-center items-center flex-col lg:flex-row gap-4 container">
                 <img
                     src={profile_pic}
                     className="rounded-full shadow-2xl w-48"

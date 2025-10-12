@@ -1,6 +1,6 @@
 function TimeLine() {
     return (
-        <div>
+        <div className='container mt-4'>
 
             <h2 className="text-2xl font-bold mb-10">Work Experience</h2>
 
