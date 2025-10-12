@@ -1,2 +1,26 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark, dark;
+}
+@plugin "daisyui/theme" {
+    name: "light";
+    default: false;
+    /*--color-primary: teal;*/
+    /*--color-secondary: teal;*/
+}
+@plugin "daisyui/theme" {
+    name: "dark";
+    default: true;
+    /*--color-primary: red;*/
+    /*--color-secondary: teal;*/
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+body {
+    font-family: Space Grotesk, Noto Sans, sans-serif;
+}
+
+.container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8; /* Centered with responsive padding */
+    max-width: 1366px; /* Optional: set a max-width */
+}
