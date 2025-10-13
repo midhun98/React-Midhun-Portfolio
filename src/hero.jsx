@@ -2,7 +2,7 @@ import profile_pic from "./assets/images/midhun_profile_pic.jpg";
 
 function Hero() {
     return (
-        <div className="hero min-h-screen  bg-base-200">
+        <div className="hero min-h-screen  bg-base-200" id="hero">
             <div className="flex justify-center items-center flex-col lg:flex-row gap-4 container">
                 <img
                     src={profile_pic}
@@ -14,7 +14,10 @@ function Hero() {
                         A passionate web developer with a focus on creating innovative and user-friendly web applications. I specialize in front-end
                         and back-end development, delivering high-quality solutions tailored to meet client needs.
                     </p>
-                    <button className="btn btn-primary">View Projects</button>
+                    <div className="flex gap-1">
+                        <a className="btn btn-primary" href='#projects'>View Projects</a>
+                        <a className="btn btn-outline btn-info" href='#contact'>Contact Me</a>
+                    </div>
                 </div>
             </div>
         </div>

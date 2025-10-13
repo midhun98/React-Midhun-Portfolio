@@ -24,3 +24,6 @@ body {
     @apply mx-auto px-4 sm:px-6 lg:px-8; /* Centered with responsive padding */
     max-width: 1366px; /* Optional: set a max-width */
 }
+html {
+    scroll-behavior: smooth;
+}

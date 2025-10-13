@@ -1,6 +1,6 @@
 function Projects() {
     return (
-        <section className="min-h-screen container">
+        <section className="min-h-screen container" id='projects'>
             <div className=''>
 
                 <h2 className="text-2xl font-bold pb-3 pt-5">Projects</h2>
