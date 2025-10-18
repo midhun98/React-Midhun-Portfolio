@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 
 function ThemeController() {
-    const [theme, setTheme] = useState("dark"); // default: dark
-
-    // Sync state with HTML attribute
+    // const [theme, setTheme] = useState("dark"); // default: dark
+    const [theme, setTheme] = useState(() => {
+        // Load saved theme from localStorage, default to "light"
+        return localStorage.getItem("theme") || "light";
+    });
+    // Apply theme to document and store it in localStorage
     useEffect(() => {
         document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
     }, [theme]);
 
     // Handle toggle change
