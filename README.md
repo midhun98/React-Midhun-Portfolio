@@ -13,8 +13,7 @@ It showcases my work, projects, and ways to connect with me.
 
 ## 🎯 Live Demo
 
-👉 [Visit My Portfolio](https://your-app-name.up.railway.app)  
-*(Replace with your actual Railway or custom domain URL)*
+👉 [Visit My Portfolio](https://react-midhun-portfolio-production.up.railway.app/)  
 
 ---
 
