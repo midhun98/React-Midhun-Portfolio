@@ -1,8 +1,5 @@
 [build]
-builder = "NIXPACKS"
-
-[start]
-cmd = "npm run start"
+builder = "DOCKERFILE"
 
 [build.env]
 NODE_VERSION = "20.19.0"

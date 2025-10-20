@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  react-app:
+    build: .
+    container_name: midhun_portfolio
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+    restart: always

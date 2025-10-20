@@ -1,12 +1,43 @@
-# React + Vite
+# 🌐 Midhun's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio — built with **React**, **Vite**, **Tailwind CSS**, and **DaisyUI**.  
+It showcases my work, projects, and ways to connect with me.
 
-Currently, two official plugins are available:
+![Vite](https://img.shields.io/badge/Vite-7.1+-646CFF?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-19.0+-61DAFB?logo=react&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0+-38B2AC?logo=tailwindcss&logoColor=white)
+![DaisyUI](https://img.shields.io/badge/DaisyUI-5.0+-9333EA?logo=daisyui&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [Visit My Portfolio](https://your-app-name.up.railway.app)  
+*(Replace with your actual Railway or custom domain URL)*
+
+---
+
+## 🧰 Tech Stack
+
+| Tool | Purpose |
+|------|----------|
+| ⚛️ **React 19** | UI framework |
+| ⚡ **Vite** | Lightning-fast bundler |
+| 🎨 **Tailwind CSS + DaisyUI** | Styling and components |
+| 📦 **EmailJS** | Contact form email sending |
+| 🐳 **Docker** | Containerized deployment |
+| ☁️ **Railway** | Hosting and automatic builds |
+
+---
+
+## 🧱 Local Development
+
+Make sure you have **Node.js 20+** and **npm** installed.
+
+```bash
+# Install dependencies
+npm install
+
+# Run the app locally
+npm run dev
